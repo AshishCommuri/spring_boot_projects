@@ -1,6 +1,4 @@
 # spring_boot_projects
-Here's a detailed and structured README file for your Spring Boot projects repository. This README includes an overview of the projects, technologies used, database configurations, setup instructions, and more:
-
 ---
 
 # Spring Boot Microservices - Backend Projects
