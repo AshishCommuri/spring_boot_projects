@@ -17,12 +17,8 @@ COPY src ./src
 # Build the application
 RUN ./mvnw clean package -DskipTests
 
-# Copy the generated JAR file to the container
-RUN mkdir -p target
-COPY target/ecommerce-0.0.1-SNAPSHOT.jar app.jar
-
 # Expose the application port (Change if needed)
 EXPOSE 8080
 
-# Start the application
-CMD ["java", "-jar", "app.jar"]
+# Start the application using the built JAR (inside /app/target/)
+CMD ["java", "-jar", "target/ecommerce-0.0.1-SNAPSHOT.jar"]
