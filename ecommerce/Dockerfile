@@ -1,5 +1,5 @@
-# Use an OpenJDK 8 base image
-FROM eclipse-temurin:8-jdk
+# Use OpenJDK 17 as base image
+FROM eclipse-temurin:17-jdk
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY src ./src
 # Build the application
 RUN ./mvnw clean package -DskipTests
 
-# Expose the application port (Change if your app runs on a different port)
+# Expose the application port (Change if needed)
 EXPOSE 8080
 
 # Start the application
