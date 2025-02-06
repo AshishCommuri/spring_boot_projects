@@ -80,13 +80,13 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.springboot.EcommerceApplication</mainClass>
-                </configuration>
-            </plugin>
+             <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.springboot.ecommerce.EcommerceProjectApplication</mainClass>
+            </configuration>
+        </plugin>
         </plugins>
     </build>
 </project>
